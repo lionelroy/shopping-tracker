@@ -1,9 +1,10 @@
-import Header from './components/Header.js';
-import SearchItem from './components/SearchItem.js';
-import Content from './components/Content.js';
-import Footer from './components/Footer.js';
+import React from 'react';
+import Header from './components/Header';
+import SearchItem from './components/SearchItem';
+import AddItem from './components/AddItem';
+import Content from './components/Content';
+import Footer from './components/Footer';
 import { useState } from 'react';
-import AddItem from './components/AddItem.js';
 
 function App() {
   const [items, setItems] = useState(JSON.parse(localStorage.getItem('shoppinglist')));
@@ -19,16 +20,16 @@ function App() {
     const id = items.length ? items[items.length - 1].id + 1 : 1;
     const myNewItem = { id, checked: false, item };
     const listItems = [...items, myNewItem];
-    setAndSaveItems(listItems)
+    setAndSaveItems(listItems);
   }
 
   const handleCheck = (id) => {
-    const listItems = items.map((item) => item.id === id ? { ...item, checked: !item.checked} : item);
+    const listItems = items.map((item) => item.id === id ? { ...item, checked: !item.checked } : item);
     setAndSaveItems(listItems);
   }
 
   const handleDelete = (id) => {
-    const listItems = items.filter((item) => item.id !== id)
+    const listItems = items.filter((item) => item.id !== id);
     setAndSaveItems(listItems);
   }
 
@@ -38,11 +39,11 @@ function App() {
     addItem(newItem);
     setNewItem('');
   }
- 
+
   return (
     <div className="App">
-      <Header title="Shopping List"/>
-      <AddItem 
+      <Header title="Shopping List" />
+      <AddItem
         newItem={newItem}
         setNewItem={setNewItem}
         handleSubmit={handleSubmit}
@@ -51,13 +52,12 @@ function App() {
         search={search}
         setSearch={setSearch}
       />
-      <Content 
-        items={items.filter(item => ((item.item).toLowerCase()).includes
-        (search.toLowerCase()))}
+      <Content
+        items={items.filter(item => ((item.item).toLowerCase()).includes(search.toLowerCase()))}
         handleCheck={handleCheck}
         handleDelete={handleDelete}
       />
-      <Footer length={items.length}/>
+      <Footer length={items.length} />
     </div>
   );
 }
