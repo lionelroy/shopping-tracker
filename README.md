@@ -3,8 +3,8 @@
 ### Add, delete, check and search for items with this Shopping list React App.
 
 ## Preview:
-<img src="public/mobile-screenshot.jpg" alt="screenshots" width="480"/>
-<img src="public/tablet-screenshot.jpg" alt="screenshots" width="650"/>
+<img src="public/mobile-screenshot.png" alt="screenshots" width="480"/>
+<img src="public/tablet-screenshot.png" alt="screenshots" width="650"/>
 
 
 ## Concepts used in this app
