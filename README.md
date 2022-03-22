@@ -2,6 +2,8 @@
 
 ### Add, delete, check and search for items with this Shopping list React App.
 
+<a class="README-link" href="https://stellar-cobbler-b33082.netlify.app/">Live Demo</a>
+
 ## Preview:
 <img src="public/mobile-screenshot.png" alt="screenshots" width="480"/>
 <img src="public/tablet-screenshot.png" alt="screenshots" width="650"/>
