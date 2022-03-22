@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/shopping-tracker/static/css/main.2f125ca8.css",
+    "main.js": "/shopping-tracker/static/js/main.3e5b6ae9.js",
+    "index.html": "/shopping-tracker/index.html",
+    "main.2f125ca8.css.map": "/shopping-tracker/static/css/main.2f125ca8.css.map",
+    "main.3e5b6ae9.js.map": "/shopping-tracker/static/js/main.3e5b6ae9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f125ca8.css",
+    "static/js/main.3e5b6ae9.js"
+  ]
+}
