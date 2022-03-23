@@ -37,7 +37,7 @@ body {
 header {
   width: 100%;
   padding: 0.5em 0.25em;
-  color: rgba( 104, 158, 194, 0.8 );
+  color: rgba(91, 140, 163, 0.8);
   background-color: rgba( 255, 255, 255);
   display: flex;
   justify-content: space-between;
@@ -58,7 +58,7 @@ main {
 footer {
   width: 100%;
   padding: 0.25em;
-  background-color: rgba( 104, 158, 194);
+  background-color: rgba(91, 140, 163, 0.8);
   color: #eee;
   display: grid;
   place-content: center;
